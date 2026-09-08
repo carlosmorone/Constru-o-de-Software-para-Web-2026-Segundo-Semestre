@@ -7,6 +7,47 @@
     <title>Desafio das imagens</title>
 </head>
 <body>
+    <h3>Cariacica - ES</h3>
+
+    <img src="Cariacica1.jpg" alt="Cariacica1" width="800px">
+<br>
+<br>
+<hr>
+
+    <h3>Cidade com legenda</h3>
+    
+    <img src="Cariacica2.jpg" alt="Cariacica2" width="800px">
+    <figcaption>Orla de Cariacica A Mais Top Do Brasil</figcaption>
+
+<br>
+<br>
+<hr>
+
+    <h3>Imagem que muda de tamanho</h3>
+
+    <style>
+        .paisagem {
+            width: 800px;
+            height: auto;
+        }
+
+        /* Quando a tela tiver até 760px */
+        @media (max-width: 800px) {
+            .paisagem {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <img 
+        class="paisagem"
+        src="Cariacica3.jpg"
+        alt="Paisagem da cidade"
+    >
+    
     
 </body>
 </html>
