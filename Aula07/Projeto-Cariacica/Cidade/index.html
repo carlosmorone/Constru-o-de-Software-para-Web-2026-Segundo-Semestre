@@ -3,42 +3,227 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cariacica - Cidade</title>
+
+    <style>
+        /* Configuração geral */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f7f5;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #006b3c, #00a859);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Conteúdo */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007a45;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        /* Imagem */
+        .imagem-cidade {
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Lista */
+        ul {
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        /* Links de download */
+        .download {
+            display: inline-block;
+            background-color: #007a45;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 7px;
+            font-weight: bold;
+            margin-right: 8px;
+            transition: 0.3s;
+        }
+
+        .download:hover {
+            background-color: #005c34;
+        }
+
+        /* Link da W3Schools */
+        .referencia {
+            color: #007a45;
+            font-weight: bold;
+        }
+
+        .referencia:hover {
+            color: #00a859;
+        }
+
+        /* Botão voltar */
+        .voltar {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .voltar:hover {
+            background-color: #007a45;
+            transform: translateX(-5px);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Cariacica - Espírito Santo</h1>
+    <header>
+        <h1>Cariacica - Espírito Santo</h1>
+        <p>Conheça um pouco mais sobre a cidade</p>
+    </header>
 
-    <h2>Sobre Cariacica</h2>
+    <main>
 
-    <p>
-        Cariacica é um município localizado no estado do Espírito Santo,
-        na Região Sudeste do Brasil.
-    </p>
+        <section>
+            <h2>Sobre Cariacica</h2>
 
-    <p>
-        A cidade faz parte da Região Metropolitana da Grande Vitória
-        e possui importância histórica, cultural e econômica para o estado.
-    </p>
+            <img class="imagem-cidade"
+                 src="kleberandrade.jpg"
+                 alt="Estádio Kleber Andrade, em Cariacica">
 
-    <h2>Informações sobre a cidade</h2>
+            <p>
+                Cariacica é um município localizado no estado do Espírito Santo,
+                na Região Sudeste do Brasil.
+            </p>
 
-    <ul>
-        <li>Estado: Espírito Santo</li>
-        <li>Região: Sudeste</li>
-        <li>País: Brasil</li>
-    </ul>
+            <p>
+                A cidade faz parte da Região Metropolitana da Grande Vitória
+                e possui importância histórica, cultural e econômica para o estado.
+            </p>
+        </section>
 
-    <h2>Referência</h2>
+        <section>
+            <h2>Informações sobre a cidade</h2>
 
-    <p>
-        Para aprender mais sobre criação de páginas HTML, acesse:
-    </p>
+            <ul>
+                <li><strong>Estado:</strong> Espírito Santo</li>
+                <li><strong>Região:</strong> Sudeste</li>
+                <li><strong>País:</strong> Brasil</li>
+            </ul>
+        </section>
 
-    <a href="https://www.w3schools.com/" target="_blank">
-        W3Schools
-    </a>
+        <section>
+            <h2>Downloads</h2>
+
+            <p>
+                <a class="download"
+                   href="../arquivos/cariacica.pdf"
+                   target="_blank">
+                    📄 Baixar PDF
+                </a>
+
+                Arquivo sobre Cariacica.
+            </p>
+
+            <p>
+                <a class="download"
+                   href="../arquivos/orla.docx"
+                   target="_blank">
+                    📄 Baixar DOC
+                </a>
+
+                Arquivo sobre a orla.
+            </p>
+        </section>
+
+        <section>
+            <h2>Referência</h2>
+
+            <p>
+                Para aprender mais sobre criação de páginas HTML, acesse:
+            </p>
+
+            <a class="referencia"
+               href="https://www.w3schools.com/"
+               target="_blank">
+                W3Schools
+            </a>
+        </section>
+
+        <!-- Botão para voltar para a página anterior -->
+        <div style="text-align: center; margin: 30px 0;">
+
+            <a class="voltar" href="../index.html">
+                ← Voltar para a página inicial
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Conheça Cariacica</p>
+    </footer>
 
 </body>
 
