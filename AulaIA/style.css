@@ -1,0 +1,120 @@
+/* 1. Configurações Gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: 1e293b;
+    line-height: 1.6;
+}
+
+/* 2. Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1e3a8a;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #64748b;
+    margin-top: 0;
+}
+
+/* 3. Área principal */
+main {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* 4. Formulário e grupos */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+fieldset {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+legend {
+    color: #1d4ed8;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* 5. Campos */
+form div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input:not([type="checkbox"]),
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+    background-color: #ffffff;
+}
+
+/* 6. Destaque ao selecionar um campo */
+input:focus,
+select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+/* 7. Checkbox */
+input[type="checkbox"] {
+    accent-color: #2563eb;
+}
+
+input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+}
+
+/* 8. Botão */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* 9. Rodapé */
+footer {
+    margin-top: 24px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
