@@ -4,15 +4,26 @@ function Calcular(){
     const operation = document.getElementById("operation").value;
 
     let result;
-    if (operation ==="+") {
-        result =parseFloat(num1) + parseFloat(num2);
-    } else if (operation ==="-"){
-        result =parseFloat(num1) - parseFloat(num2);
-    } else if (operation ==="*"){
-        result =parseFloat(num1) * parseFloat(num2);
-    } else if (operation ==="/"){
-        result =parseFloat(num1) / parseFloat(num2); 
-}
+
+    switch (operation) {
+        case "+":
+            result = parseFloat(num1) + parseFloat(num2);
+            break;
+        case "-":
+            result = parseFloat(num1) + parseFloat(num2);
+            break;
+        case "*":
+            result = parseFloat(num1) + parseFloat(num2);
+            break;
+        case "/":
+            if (parseFloat(num2) === 0) [
+                result = "Error: Division by zero";
+            ]
+            else[
+                result =parseFloat(num1) / parseFloat(num2);
+            ] 
+    }
+   
 
     document.getElementById("resultado").textContent = result;
 }
